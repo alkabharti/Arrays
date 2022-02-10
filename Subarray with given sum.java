@@ -1,5 +1,5 @@
-## Subarray with given sum :
-#### Given an unsorted array A of size N that contains only non-negative integers, find a continuous sub-array which adds to a given number S.
+Subarray with given sum :
+Given an unsorted array A of size N that contains only non-negative integers, find a continuous sub-array which adds to a given number S.
   
 Input:
 N = 5, S = 12
@@ -9,7 +9,7 @@ Explanation: The sum of elements from 2nd position to 4th position is 12.
   
 ------------------------------------------------------------------------------------------------------------------------------------------
   
-** Solution 1: **
+Solution 1:
 
 Time Complexity : O(n^2)
 
@@ -42,7 +42,7 @@ static ArrayList<Integer> subarraySum(int[] arr, int n, int s)
 
 ------------------------------------------------------------------------------------------------------------------------------------------
   
-** Solution 2: **
+Solution 2: 
 
 Time Complexity : O(n)
   
