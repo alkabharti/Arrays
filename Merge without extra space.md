@@ -1,5 +1,4 @@
-```java
-Merge Without Extra Space :
+**Merge Without Extra Space :**
 Given two sorted arrays arr1[] and arr2[] of sizes n and m in non-decreasing order. 
 Merge them in sorted order without using any extra space. 
 Modify arr1 so that it contains the first N elements and modify arr2 so that it contains the last M elements.
@@ -18,6 +17,7 @@ Explanation: After merging the two non-decreasing arrays, we get, 0 1 2 3 5 6 7 
   
 Solution :
 
+```java
 public static void merge(long arr1[], long arr2[], int n, int m) 
     {
         int i=n-1,j=0;
@@ -38,5 +38,4 @@ public static void merge(long arr1[], long arr2[], int n, int m)
     }
 ```
 
-![image](https://user-images.githubusercontent.com/23376002/153550681-5581c42c-692b-4747-a822-41c8fc007590.png)
-
+![image](https://user-images.githubusercontent.com/23376002/153550882-a633109d-267b-47e7-8999-41b48ee7211e.png)
