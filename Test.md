@@ -12,3 +12,6 @@ HashSet<Integer> hashset=new HashSet<Integer>();
         }
         
 ```       
+
+![image](https://user-images.githubusercontent.com/23376002/153539878-0ef4aab8-65d0-4b63-a38b-bcf0639f88e0.png)
+
