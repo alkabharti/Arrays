@@ -11,7 +11,7 @@ Explanation: There are 2 triplets: 1 + 2 = 3 and 3 + 2 = 5
   
 Solution 1 :
 
-Time Complexity : O(n^2)
+Time Complexity : O(n^3)
   
 int countTriplet(int arr[], int n) 
 {
@@ -31,8 +31,31 @@ int countTriplet(int arr[], int n)
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------
-  
+
 Solution 2 :
+
+Time Complexity : O(n^2)
+  
+int countTriplet(int arr[], int n) 
+{
+    int i,j,count=0;
+    HashSet<Integer> hashset=new HashSet<Integer>();
+    for(i=0;i<n;i++)
+        hashset.add(arr[i]);
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(hashset.contains(arr[i]+arr[j]))
+                count++;
+        }
+    }
+    return count;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Solution 3 :
 
 Time Complexity : O(n^2)
   
