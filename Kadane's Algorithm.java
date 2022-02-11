@@ -45,6 +45,22 @@ Solution 2 :
 
 Time Complexity : O(n)
   
+long maxSubarraySum(int arr[], int n)
+{
+    int i;
+    long max=Integer.MIN_VALUE, current=0;
+    for(i=0;i<n;i++)
+    {
+        current+=arr[i];
+        if(current>max)
+            max=current;
+        if(current<0)
+            current=0;
+    }
+    return max;
+}
+
+
 
   
   
