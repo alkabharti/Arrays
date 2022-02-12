@@ -1,4 +1,4 @@
-Number of pairs :
+**Number of pairs :**
 Given two arrays X and Y of positive integers, find the number of pairs such that x^y > y^x (raised to power of) 
 where x is an element from X and y is an element from Y.
 
@@ -9,7 +9,7 @@ M = 3, X[] = [2 1 6]
 N = 2, Y[] = [1 5]
 Output: 3
 Explanation: 
-The pairs which follow xy > yx are as such: 21 > 12,  25 > 52 and 61 > 16 .
+The pairs which follow xy > yx are as such: 2^1 > 1^2,  2^5 > 5^2 and 6^1 > 1^6 .
 
 Example 2:
 
@@ -18,11 +18,11 @@ M = 4, X[] = [2 3 4 5]
 N = 3, Y[] = [1 2 3]
 Output: 5
 Explanation: 
-The pairs for the given input are 21 > 12 , 31 > 13 , 32 > 23 , 41 > 14 , 51 > 15 
+The pairs for the given input are 2^1 > 1^2 , 3^1 > 1^3 , 3^2 > 2^3 , 4^1 > 1^4 , 5^1 > 1^5 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Solution 1: (Brute Force Algorithm)
+**Solution 1: (Brute Force Algorithm)**
 
 Time Complexity : O(MxN)
 
@@ -39,7 +39,7 @@ static long countPairs(int x[], int y[], int M, int N)
 }
 ```
 
-Solution 2: 
+**Solution 2: **
 
 Time Complexity : O((N + M)log(N))
 
@@ -113,5 +113,9 @@ class Solution
     }
 }
 ```
+
+![image](https://user-images.githubusercontent.com/23376002/153711220-dc8af863-835d-4c73-9d1e-28c42509909e.png)
+
+
 
 
