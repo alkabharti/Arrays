@@ -5,20 +5,18 @@ where x is an element from X and y is an element from Y.
 Example 1:
 
 Input: <br />
-M = 3, X[] = [2 1 6] 
-N = 2, Y[] = [1 5]
-Output: 3
-Explanation: 
-The pairs which follow xy > yx are as such: 2^1 > 1^2,  2^5 > 5^2 and 6^1 > 1^6 .
+M = 3, X[] = [2 1 6] <br />
+N = 2, Y[] = [1 5] <br />
+Output: 3 <br />
+Explanation: The pairs which follow xy > yx are as such: 2^1 > 1^2,  2^5 > 5^2 and 6^1 > 1^6 .
 
 Example 2:
 
-Input: 
-M = 4, X[] = [2 3 4 5]
-N = 3, Y[] = [1 2 3]
-Output: 5
-Explanation: 
-The pairs for the given input are 2^1 > 1^2 , 3^1 > 1^3 , 3^2 > 2^3 , 4^1 > 1^4 , 5^1 > 1^5 
+Input: <br />
+M = 4, X[] = [2 3 4 5] <br />
+N = 3, Y[] = [1 2 3] <br />
+Output: 5 <br />
+Explanation: The pairs for the given input are 2^1 > 1^2 , 3^1 > 1^3 , 3^2 > 2^3 , 4^1 > 1^4 , 5^1 > 1^5 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,8 +36,9 @@ static long countPairs(int x[], int y[], int M, int N)
     return pairs;
 }
 ```
+--------------------------------------------------------------------------------------------------------------------------------------
 
-**Solution 2: **
+**Solution 2:**
 
 Time Complexity : O((N + M)log(N))
 
