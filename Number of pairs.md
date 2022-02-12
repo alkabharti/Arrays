@@ -4,7 +4,7 @@ where x is an element from X and y is an element from Y.
 
 Example 1:
 
-Input: 
+Input: <br />
 M = 3, X[] = [2 1 6] 
 N = 2, Y[] = [1 5]
 Output: 3
