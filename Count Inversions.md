@@ -27,7 +27,7 @@ Explanation: As all the elements of array are same, so there is no inversion cou
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Solution 1 : (Brute Force Algorithm)
+**Solution 1 : (Brute Force Algorithm)**
 
 Time Complexity : O(N^2)
 
@@ -46,7 +46,7 @@ static long inversionCount(long arr[], long N)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Solution 2 : (Enhance Merge Sort)
+**Solution 2 : (Enhance Merge Sort)**
 
 Time Complexity : O(NLogN)
 
