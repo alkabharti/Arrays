@@ -66,6 +66,8 @@ public static void sort012(int a[], int n)
 Solution 3:
 
 3 Pointer Algorithm[ Dutch National Flag Algorithm ]
+  
+ https://www.youtube.com/watch?v=oaVa-9wmpns
 
 
   
