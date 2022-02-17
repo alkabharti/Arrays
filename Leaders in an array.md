@@ -17,3 +17,42 @@ Input:<br />
 n = 5<br />
 A[] = {1,2,3,4,0}<br />
 Output: 4 0<br />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Solution 1 :
+
+Time Complexity : O(n^2)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Solution 2 :
+
+Time Complexity : O(n)
+
+```java
+static ArrayList<Integer> leaders(int arr[], int n)
+{
+    ArrayList<Integer> array=new ArrayList<Integer>();
+    ArrayList<Integer> ans=new ArrayList<Integer>();
+    int leader=arr[n-1];
+    int i;
+    array.add(leader);
+    for(i=n-2;i>=0;i--)
+    {
+        if(arr[i]>=leader)
+        {
+            leader=arr[i];
+            array.add(0,leader);
+        }
+    }
+    for(i=array.size()-1;i>=0;i--)
+        ans.add(array.get(i));
+    return ans;
+}
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Solution 3 :
+
+Time Complexity : O(n)
