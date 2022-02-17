@@ -43,7 +43,7 @@ static ArrayList<Integer> leaders(int arr[], int n)
         if(arr[i]>=leader)
         {
             leader=arr[i];
-            array.add(0,leader);
+            array.add(leader);
         }
     }
     for(i=array.size()-1;i>=0;i--)
@@ -56,3 +56,22 @@ static ArrayList<Integer> leaders(int arr[], int n)
 Solution 3 :
 
 Time Complexity : O(n)
+
+```java
+static ArrayList<Integer> leaders(int arr[], int n)
+{
+    ArrayList<Integer> array=new ArrayList<Integer>();
+    int leader=arr[n-1];
+    int i;
+    array.add(leader);
+    for(i=n-2;i>=0;i--)
+    {
+        if(arr[i]>=leader)
+        {
+            leader=arr[i];
+            array.add(0,leader);
+        }
+    }
+    return array;
+}
+```
