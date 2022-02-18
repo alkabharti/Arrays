@@ -19,3 +19,35 @@ dep[] = {1000, 1200, 1240}<br />
 Output: 1<br />
 Explanation: Only 1 platform is required to safely manage the arrival and departure of all trains. 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Solution :
+
+Time Complexity : nlogn
+
+```java
+static int findPlatform(int arr[], int dep[], int n)
+{
+    Arrays.sort(arr);
+    Arrays.sort(dep);
+    int platform=0,max=0,i=0,j=0;
+    while(i<n && j<n)
+    {
+        if(arr[i]<=dep[j])
+        {
+            platform++;
+            i++;
+        }
+        else
+        {
+            platform--;
+            j++;
+        }
+        if(platform>max)
+            max=platform;
+    }
+    return max;
+}
+```
+
+
