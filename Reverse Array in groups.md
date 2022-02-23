@@ -47,5 +47,20 @@ void reverseInGroups(ArrayList<Integer> arr, int n, int k)
 Solution 2 :
 
 ```java 
-
+void reverseInGroups(ArrayList<Integer> arr, int n, int k) 
+    {
+        int i;
+        for(i=0;i<n;i+=k)
+        {
+            int start=i;
+            int end=Math.min(i+k-1,n-1);
+            while(start<=end)
+            {
+                Collections.swap(arr,start,end);
+                start++;
+                end--;
+            }
+        }
+        
+    }
 ```
