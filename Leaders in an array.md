@@ -51,6 +51,9 @@ static ArrayList<Integer> leaders(int arr[], int n)
     return ans;
 }
 ```
+
+![image](https://user-images.githubusercontent.com/23376002/155481981-e7671737-074e-4f80-8fb8-cc6bed940c29.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 Solution 3 :
@@ -69,7 +72,7 @@ static ArrayList<Integer> leaders(int arr[], int n)
         if(arr[i]>=leader)
         {
             leader=arr[i];
-            array.add(0,leader);
+            array.add(0,leader); //Adding element always at 0th index
         }
     }
     return array;
