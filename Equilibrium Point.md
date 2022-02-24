@@ -1,9 +1,11 @@
-**Equilibrium Point :**
+<h2> Equilibrium Point : </h1>
 <br />
 Given an array A of n positive numbers. The task is to find the first Equilibium Point in the array. 
 Equilibrium Point in an array is a position such that the sum of elements before it is equal to the sum of elements after it.
+<br />
 
-Example 1:
+
+**Example 1:**
 
 Input: <br />
 n = 5 <br />
@@ -12,7 +14,7 @@ Output: 3 <br />
 Explanation: For second test case equilibrium point is at position 3 as elements before it (1+3) = elements after it (2+2). 
  
 
-Example 2:
+**Example 2:**
 
 Input: <br />
 n = 1 <br />
@@ -22,7 +24,7 @@ Explanation: Since its the only element hence its the only equilibrium point.
   
 ---------------------------------------------------------------------------------------------------------------------------------------------
   
-**Solution :**
+<h3>Solution : </h3>
 
 Time Complexity : O(n)
 
