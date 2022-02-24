@@ -27,6 +27,7 @@ public static void sort012(int a[], int n)
     Arrays.sort(a);
 }  
 
+-> Here Time Complexity will be O(NlogN)
 
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -58,6 +59,15 @@ public static void sort012(int a[], int n)
     for(i=0;i<two;i++,k++)
         a[k]=2;
 }  
+
+-----------------------------------------------------------------------------------------------------------------------------------------  
+
+  
+Solution 3:
+
+3 Pointer Algorithm[ Dutch National Flag Algorithm ]
+  
+ https://www.youtube.com/watch?v=oaVa-9wmpns
 
 
   
