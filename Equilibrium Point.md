@@ -24,7 +24,7 @@ Explanation: Since its the only element hence its the only equilibrium point.
 Solution :
 
 Time Complexity : O(n)
-  
+```java  
 public static int equilibriumPoint(long arr[], int n) 
 {
     int i,left=0,right=0,res=0;
@@ -42,5 +42,8 @@ public static int equilibriumPoint(long arr[], int n)
     else
         return res;
 }
+```
+
+![image](https://user-images.githubusercontent.com/23376002/155478167-1d28c622-4ba7-4c3a-8325-c915161f4193.png)
 
 
