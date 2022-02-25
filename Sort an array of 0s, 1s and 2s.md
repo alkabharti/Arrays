@@ -96,5 +96,8 @@ public static void sort012(int a[], int n)
 }
 ```
 
+![image](https://user-images.githubusercontent.com/23376002/155654144-99d068d1-2079-4044-8ec7-cb803f2309aa.png)
+
+
 
   
