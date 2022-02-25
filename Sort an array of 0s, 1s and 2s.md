@@ -62,7 +62,7 @@ public static void sort012(int a[], int n)
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
-<h3> Solution 3: </h3>
+<h3> Solution 3: (Dutch national flag Algorithm (DNF))</h3> 
 
 Time Complexity : O(N)
 
