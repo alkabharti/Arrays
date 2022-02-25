@@ -24,23 +24,23 @@ Time Complexity : O(N)
 
 ```java 
 void reverseInGroups(ArrayList<Integer> arr, int n, int k) 
+{
+    int i;
+    for(i=0;i<n;i+=k)
     {
-        int i;
-        for(i=0;i<n;i+=k)
+        int start=i;
+        int end=Math.min(i+k-1,n-1);
+        while(start<=end)
         {
-            int start=i;
-            int end=Math.min(i+k-1,n-1);
-            while(start<=end)
-            {
-                int temp=arr.get(start);
-                arr.set(start,arr.get(end));
-                arr.set(end,temp);
-                start++;
-                end--;
-            }
+            int temp=arr.get(start);
+            arr.set(start,arr.get(end));
+            arr.set(end,temp);
+            start++;
+            end--;
         }
-        
     }
+
+}
 ```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,21 +52,21 @@ Time Complexity : O(N)
 
 ```java 
 void reverseInGroups(ArrayList<Integer> arr, int n, int k) 
+{
+    int i;
+    for(i=0;i<n;i+=k)
     {
-        int i;
-        for(i=0;i<n;i+=k)
+        int start=i;
+        int end=Math.min(i+k-1,n-1);
+        while(start<=end)
         {
-            int start=i;
-            int end=Math.min(i+k-1,n-1);
-            while(start<=end)
-            {
-                Collections.swap(arr,start,end);
-                start++;
-                end--;
-            }
+            Collections.swap(arr,start,end);
+            start++;
+            end--;
         }
-        
     }
+
+}
 ```
 
 ![image](https://user-images.githubusercontent.com/23376002/155639387-9bd48de7-720e-4b0e-9f4f-bc8d5fb745d9.png)
