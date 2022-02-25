@@ -1,14 +1,14 @@
-Sort an array of 0s, 1s and 2s :
+<h2> Sort an array of 0s, 1s and 2s : </h2>
 Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
 
-Example 1:
+**Example 1:**
 
 Input: 
 N = 5 arr[]= {0 2 1 2 0}
 Output: 0 0 1 2 2
 Explanation: 0s 1s and 2s are segregated into ascending order.
 
-Example 2:
+**Example 2:**
 
 Input: 
 N = 3 arr[] = {0 1 0}
@@ -18,22 +18,24 @@ Explanation: 0s 1s and 2s are segregated into ascending order.
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
   
-Solution 1:
+<h3> Solution 1: </h3>
 
 Time Complexity : O(NlogN)
-  
+
+```java  
 public static void sort012(int a[], int n)
 {
     Arrays.sort(a);
 }  
-
+```
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
   
-Solution 2:
+<h3> Solution 2: </h3>
 
 Time Complexity : O(N)
 
+```java
 public static void sort012(int a[], int n)
 {
     int i;
@@ -57,12 +59,41 @@ public static void sort012(int a[], int n)
     for(i=0;i<two;i++,k++)
         a[k]=2;
 }  
-
+```
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
-  
-  
+<h3> Solution 3: </h3>
 
+Time Complexity : O(N)
+
+```java  
+public static void sort012(int a[], int n)
+    {
+        int i;
+        int low=0, mid=0, high=n-1;
+        while(mid<=high)
+        {
+            if(a[mid]==0)
+            {
+                int temp=a[low];
+                a[low]=a[mid];
+                a[mid]=temp;
+                low++;
+                mid++;
+            }
+            else if(a[mid]==1)
+            {
+                mid++;
+            }
+            else if(a[mid]==2)
+            {
+                int temp=a[mid];
+                a[mid]=a[high];
+                a[high]=temp;
+                high--;
+            }
+        }  
+```
 
 
   
