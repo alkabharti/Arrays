@@ -20,14 +20,12 @@ Explanation: 0s 1s and 2s are segregated into ascending order.
   
 Solution 1:
 
-Time Complexity : O(N)
+Time Complexity : O(NlogN)
   
 public static void sort012(int a[], int n)
 {
     Arrays.sort(a);
 }  
-
--> Here Time Complexity will be O(NlogN)
 
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -63,11 +61,7 @@ public static void sort012(int a[], int n)
 -----------------------------------------------------------------------------------------------------------------------------------------  
 
   
-Solution 3:
 
-3 Pointer Algorithm[ Dutch National Flag Algorithm ]
-  
- https://www.youtube.com/watch?v=oaVa-9wmpns
 
 
   
