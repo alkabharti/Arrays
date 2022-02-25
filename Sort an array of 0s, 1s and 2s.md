@@ -68,31 +68,32 @@ Time Complexity : O(N)
 
 ```java  
 public static void sort012(int a[], int n)
+{
+    int i;
+    int low=0, mid=0, high=n-1;
+    while(mid<=high)
     {
-        int i;
-        int low=0, mid=0, high=n-1;
-        while(mid<=high)
+        if(a[mid]==0)
         {
-            if(a[mid]==0)
-            {
-                int temp=a[low];
-                a[low]=a[mid];
-                a[mid]=temp;
-                low++;
-                mid++;
-            }
-            else if(a[mid]==1)
-            {
-                mid++;
-            }
-            else if(a[mid]==2)
-            {
-                int temp=a[mid];
-                a[mid]=a[high];
-                a[high]=temp;
-                high--;
-            }
-        }  
+            int temp=a[low];
+            a[low]=a[mid];
+            a[mid]=temp;
+            low++;
+            mid++;
+        }
+        else if(a[mid]==1)
+        {
+            mid++;
+        }
+        else if(a[mid]==2)
+        {
+            int temp=a[mid];
+            a[mid]=a[high];
+            a[high]=temp;
+            high--;
+        }
+    }
+}
 ```
 
 
