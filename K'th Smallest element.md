@@ -1,4 +1,4 @@
-G Solution 1 
+### G Solution 1 
 
 O(NlogN)
 
