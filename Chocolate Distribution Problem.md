@@ -45,4 +45,6 @@ public long findMinDiff (ArrayList<Long> a, long n, long m)
 ```
 ![image](https://user-images.githubusercontent.com/23376002/155646608-5059acbd-93b6-413c-886a-4819f8246539.png)
 
+TRting some changes
+
 
