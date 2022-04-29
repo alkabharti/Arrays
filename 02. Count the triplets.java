@@ -30,7 +30,6 @@ int countTriplet(int arr[], int n)
     return count;
 }
 
-Q -> What if I had run the inner loop also : for(j=0;j<n;j++). Would it affect the count? -> Would the triplets be repeated?
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
